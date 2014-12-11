@@ -2,7 +2,59 @@
 <uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_fgM9kIEXEeSQ3fz4VmR2Ow" name="SysMLmodel">
   <packagedElement xmi:type="uml:Package" xmi:id="_6MZd8IEYEeSQ3fz4VmR2Ow" name="Context"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_9JFRgIEYEeSQ3fz4VmR2Ow" name="System Specification">
-    <packagedElement xmi:type="uml:Package" xmi:id="_RmOrIIEZEeSQ3fz4VmR2Ow" name="General Needs"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_RmOrIIEZEeSQ3fz4VmR2Ow" name="General Needs">
+      <packagedElement xmi:type="uml:Package" xmi:id="_JxXY8IEfEeSJZMW9RuJ7vw" name="Package1">
+        <packagedElement xmi:type="uml:Package" xmi:id="_91Cw4IEeEeSJZMW9RuJ7vw" name="Rover">
+          <packagedElement xmi:type="uml:UseCase" xmi:id="_ZolJQIEfEeSJZMW9RuJ7vw" name="Charger la batterie"/>
+          <packagedElement xmi:type="uml:UseCase" xmi:id="_-jrjEIEfEeSJZMW9RuJ7vw" name="Brancher un module externe"/>
+          <packagedElement xmi:type="uml:Association" xmi:id="_DrntQIEgEeSJZMW9RuJ7vw" name="" memberEnd="_DrntQYEgEeSJZMW9RuJ7vw _DrntRIEgEeSJZMW9RuJ7vw">
+            <ownedEnd xmi:type="uml:Property" xmi:id="_DrntQYEgEeSJZMW9RuJ7vw" name="brancher un module externe" type="_-jrjEIEfEeSJZMW9RuJ7vw" association="_DrntQIEgEeSJZMW9RuJ7vw">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DrntQoEgEeSJZMW9RuJ7vw" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DrntQ4EgEeSJZMW9RuJ7vw" value="1"/>
+            </ownedEnd>
+            <ownedEnd xmi:type="uml:Property" xmi:id="_DrntRIEgEeSJZMW9RuJ7vw" name="utilisateur" type="_BYXGoIEfEeSJZMW9RuJ7vw" association="_DrntQIEgEeSJZMW9RuJ7vw">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DrntRYEgEeSJZMW9RuJ7vw" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DrntRoEgEeSJZMW9RuJ7vw" value="1"/>
+            </ownedEnd>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Actor" xmi:id="_BYXGoIEfEeSJZMW9RuJ7vw" name="Utilisateur"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="__NJMQIEeEeSJZMW9RuJ7vw" name="Mobile Application Controller">
+          <packagedElement xmi:type="uml:UseCase" xmi:id="_F-BNsIEgEeSJZMW9RuJ7vw" name="Controller le rover"/>
+          <packagedElement xmi:type="uml:Association" xmi:id="_IEAp0IEgEeSJZMW9RuJ7vw" name="" memberEnd="_IEAp0YEgEeSJZMW9RuJ7vw _IEAp1IEgEeSJZMW9RuJ7vw">
+            <ownedEnd xmi:type="uml:Property" xmi:id="_IEAp0YEgEeSJZMW9RuJ7vw" name="controller le rover" type="_F-BNsIEgEeSJZMW9RuJ7vw" association="_IEAp0IEgEeSJZMW9RuJ7vw">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IEAp0oEgEeSJZMW9RuJ7vw" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IEAp04EgEeSJZMW9RuJ7vw" value="1"/>
+            </ownedEnd>
+            <ownedEnd xmi:type="uml:Property" xmi:id="_IEAp1IEgEeSJZMW9RuJ7vw" name="utilisateur" type="_BYXGoIEfEeSJZMW9RuJ7vw" association="_IEAp0IEgEeSJZMW9RuJ7vw">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IEAp1YEgEeSJZMW9RuJ7vw" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IEAp1oEgEeSJZMW9RuJ7vw" value="1"/>
+            </ownedEnd>
+          </packagedElement>
+          <packagedElement xmi:type="uml:UseCase" xmi:id="_KcqjQIEgEeSJZMW9RuJ7vw" name="Consulter etat interne (batterie)"/>
+          <packagedElement xmi:type="uml:Association" xmi:id="_PbOH8IEgEeSJZMW9RuJ7vw" name="" memberEnd="_PbOH8YEgEeSJZMW9RuJ7vw _PbOH9IEgEeSJZMW9RuJ7vw">
+            <ownedEnd xmi:type="uml:Property" xmi:id="_PbOH8YEgEeSJZMW9RuJ7vw" name="consulter etat interne (batterie)" type="_KcqjQIEgEeSJZMW9RuJ7vw" association="_PbOH8IEgEeSJZMW9RuJ7vw">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PbOH8oEgEeSJZMW9RuJ7vw" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PbOH84EgEeSJZMW9RuJ7vw" value="1"/>
+            </ownedEnd>
+            <ownedEnd xmi:type="uml:Property" xmi:id="_PbOH9IEgEeSJZMW9RuJ7vw" name="utilisateur" type="_BYXGoIEfEeSJZMW9RuJ7vw" association="_PbOH8IEgEeSJZMW9RuJ7vw">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PbOH9YEgEeSJZMW9RuJ7vw" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PbOH9oEgEeSJZMW9RuJ7vw" value="1"/>
+            </ownedEnd>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_wapy4IEfEeSJZMW9RuJ7vw" name="" memberEnd="_wapy4YEfEeSJZMW9RuJ7vw _wapy5IEfEeSJZMW9RuJ7vw">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_wapy4YEfEeSJZMW9RuJ7vw" name="utilisateur" type="_BYXGoIEfEeSJZMW9RuJ7vw" association="_wapy4IEfEeSJZMW9RuJ7vw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wapy4oEfEeSJZMW9RuJ7vw" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wapy44EfEeSJZMW9RuJ7vw" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_wapy5IEfEeSJZMW9RuJ7vw" name="charger la batterie" type="_ZolJQIEfEeSJZMW9RuJ7vw" association="_wapy4IEfEeSJZMW9RuJ7vw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wapy5YEfEeSJZMW9RuJ7vw" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wapy5oEfEeSJZMW9RuJ7vw" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_SFEjQIEZEeSQ3fz4VmR2Ow" name="Technical Needs"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_H-Ly0IEZEeSQ3fz4VmR2Ow" name="System Design">
