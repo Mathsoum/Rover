@@ -3,7 +3,7 @@
   <packagedElement xmi:type="uml:Package" xmi:id="_6MZd8IEYEeSQ3fz4VmR2Ow" name="Context"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_9JFRgIEYEeSQ3fz4VmR2Ow" name="System Specification">
     <packagedElement xmi:type="uml:Package" xmi:id="_RmOrIIEZEeSQ3fz4VmR2Ow" name="General Needs">
-      <packagedElement xmi:type="uml:Package" xmi:id="_JxXY8IEfEeSJZMW9RuJ7vw" name="Package1">
+      <packagedElement xmi:type="uml:Package" xmi:id="_JxXY8IEfEeSJZMW9RuJ7vw" name="Systeme Rover">
         <packagedElement xmi:type="uml:Package" xmi:id="_91Cw4IEeEeSJZMW9RuJ7vw" name="Rover">
           <packagedElement xmi:type="uml:UseCase" xmi:id="_ZolJQIEfEeSJZMW9RuJ7vw" name="Charger la batterie"/>
           <packagedElement xmi:type="uml:UseCase" xmi:id="_-jrjEIEfEeSJZMW9RuJ7vw" name="Brancher un module externe"/>
